@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello Outer</title>
+  </head>
+  <body>
+    <h1>{{ message }}</h1>
+    {% comment %} <a href="{% url "get_room" 7%}"> Go To Test Page </a> {% endcomment %}
+    <a href="/home"> Go To Test Page </a>
+    <ul>
+      {% for student in students %}
+      <li>{{ student.name }} - {{ student.level }} </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
