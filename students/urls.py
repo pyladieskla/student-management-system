@@ -7,5 +7,4 @@ urlpatterns = [
     # /*/
     path('', include('pupil.urls')),
     # /room/*/
-    path('room/', include('studentroom.urls'))
 ]

@@ -12,8 +12,9 @@ def test(request, id):
 
 
 def get_outer_template(request):
-    message = "How is the outer html?"
-    students = Pupil.objects.all()
+    message = "How"
+    students = Pupil.objects.filter(gender='male')
+
 
     context = {'message': message, 'students': students}
     return render(request, 'outer.html', context)
